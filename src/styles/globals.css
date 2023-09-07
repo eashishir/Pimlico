@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+} */
+
+.row::before,
+.row::after {
+  display: table;
+  content: " ";
+}
+
+.row::after {
+  clear: both;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-link {
+  transition: all 0.3s;
+
+}
+
+.nav-link::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #D60000;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s;
+
+}
+
+.nav-link:hover:after {
+  opacity: 1;
+}
+
+.active-link {
+  color: #D60000;
+}
+
+.active-link::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #D60000;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  opacity: 1;
+}
