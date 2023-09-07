@@ -1,7 +1,7 @@
 import Footer from '@/component/Footer'
 import Gallery from '@/component/Gallery'
 import Header from '@/component/Header'
-import Sidebar from '@/component/Sidebar'
+// import Sidebar from '@/component/Sidebar'
 import { useState } from 'react';
 
 
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Header setIsCollpsed={setIsCollpsed} />
-      <Sidebar isCollpsed={isCollpsed} setIsCollpsed={setIsCollpsed} />
+      {/* <Sidebar isCollpsed={isCollpsed} setIsCollpsed={setIsCollpsed} /> */}
       <Gallery />
       <div className='bg-[#FFF3E6] sm:bg-transparent'>
         <div className='max-w-[1600px] py-[27px] sm:py-0 my-[58px] px-[20px] sm:px-[15px] mx-auto lg:my-[16px] relative'>
